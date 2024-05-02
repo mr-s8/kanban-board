@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="board">
+
+
+        <form id="todo-form">
+
+            <input type="text" placeholder="New Task..." id="todo-input">
+
+            <select id="dropdown">
+                <!-- Neue Optionen werden hier dynamisch hinzugefügt -->
+            </select>
+
+            <button type="submit">Add Task</button>
+
+        </form>
+
+
+        <div class="columns">
+
+            <div class="column" id="backlog-column">
+                <h3 class="heading">Backlog</h3>
+
+            </div>
+
+            <div class="column" id="upnext-column">
+                <h3 class="heading">Up Next</h3>
+
+            </div>
+
+            <div class="column" id="inprogress-column">
+                <h3 class="heading">In Progress</h3>
+
+            </div>
+
+            <div class="column" id="onhold-column">
+                <h3 class="heading">On Hold</h3>
+
+            </div>
+
+            <div class="column" id="done-column">
+                <h3 class="heading">Done</h3>
+
+            </div>
+
+            <div class="column" id="questions-column">
+                <h3 class="heading">Questions</h3>
+
+            </div>
+
+            <div id="delete-area">
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
