@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    <a href="https://github.com/mr-s8/kanban-board/blob/master/Images/kanban-logo.png"><img src="https://github.com/mr-s8/kanban-board/blob/master/Images/kanban-logo.png" width="200" alt="kanban logo" /></a>
+    <a href="https://github.com/mr-s8/kanban-board/blob/master/Images/kanban-logo2.png"><img src="https://github.com/mr-s8/kanban-board/blob/master/Images/kanban-logo2.png" width="200" alt="kanban logo" /></a>
   </p>
 </div>
 
