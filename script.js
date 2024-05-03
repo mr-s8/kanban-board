@@ -124,5 +124,12 @@ function saveData() {
 }
 
 function showData() {
-    AllColumns.innerHTML = localStorage.getItem("data");
+    savedData = localStorage.getItem("data");
+    if (savedData === null) {
+        return;
+    } else {
+        AllColumns.innerHTML = savedData;
+    }
+
+
 }
