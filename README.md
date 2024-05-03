@@ -13,7 +13,14 @@ A Web App for self organization.
 
 
 # ToDo
-See picture
+- Make png expot possible
+- Make task ex-/import from txt file possible
+- Make Design responsive
+- Save state in browser
+- Add input so that the user can specify a topic at the top
+- Implement custom categories (add and delete function)
+- Better color for cards?
+- Fix DnD bug, where the card doesnt go back to its original column when it was hovered over another column
 
 
 ## Pictures
