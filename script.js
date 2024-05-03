@@ -1,3 +1,7 @@
+const AllColumns = document.querySelector(".columns")
+showData();
+
+
 const taskFields = document.querySelectorAll(".task")
 const dropFields = document.querySelectorAll(".column")
 
@@ -27,9 +31,11 @@ function updateColumns() {
 taskFields.forEach((task) => {        // initialize drag and drop behavior
     task.addEventListener("dragstart", () => {
         task.classList.add("is-dragging")
+        saveData();
     })
     task.addEventListener("dragend", () => {
         task.classList.remove("is-dragging")
+        saveData();
     })
 });
 
@@ -46,6 +52,7 @@ dropFields.forEach((zone) => {  // initialize drag and drop behavior
         } else {
             zone.insertBefore(curTask, bottomTask);
         }
+        saveData();
     });
 });
 
@@ -57,6 +64,7 @@ deleteField.addEventListener("dragover", (e) => {  // initialise drag and drop b
     } else {
         curTask.remove()
     }
+    saveData();
 
 });
 
@@ -88,6 +96,7 @@ form.addEventListener("submit", (e) => {        // on submit add task to selecte
     selectedLane.appendChild(newTask);
 
     input.value = "";
+    saveData();
 });
 
 const insertAboveTask = (zone, mouseY) => {
@@ -109,3 +118,11 @@ const insertAboveTask = (zone, mouseY) => {
 
     return closestTask;
 };
+
+function saveData() {
+    localStorage.setItem("data", AllColumns.innerHTML);
+}
+
+function showData() {
+    AllColumns.innerHTML = localStorage.getItem("data");
+}
