@@ -16,7 +16,7 @@ A Web App for self organization.
 - Make png expot possible
 - Make task ex-/import from txt file possible
 - Make Design responsive
-- Save state in browser
+- Save state in browser ✓
 - Add input so that the user can specify a topic at the top
 - Implement custom categories (add and delete function)
 - Better color for cards?
