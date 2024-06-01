@@ -2,10 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     -ms-overflow-style: none;
     scrollbar-width: none;
-
 }
 
 *::-webkit-scrollbar {
@@ -38,29 +36,24 @@ body {
     gap: 12px;
 }
 
-
 #todo-form input {
     padding: 12px;
     margin-right: 12px;
     width: 225px;
     height: 35px;
-    border-radius: 4px;
+    border-radius: 10px;
     border: none;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     background: transparent;
     color: white;
     font-size: 14px;
     outline: 2px solid #1d4ed8;
-    border-radius: 10px;
-
 }
 
 #todo-form input::placeholder {
     color: white;
     font-weight: bold;
 }
-
-
 
 #todo-form button {
     padding: 12px 32px;
@@ -89,10 +82,8 @@ body {
     border: none;
     margin-right: 12px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    background: #1d4ed8;
-    outline: 2px solid;
-    outline-color: #1d4ed8;
     background: #161a20;
+    outline: 2px solid #1d4ed8;
     color: white;
     border-radius: 10px;
     font-weight: bold;
@@ -106,7 +97,6 @@ body {
     gap: 16px;
     padding: 24px 32px;
     overflow: scroll;
-
 }
 
 .heading {
